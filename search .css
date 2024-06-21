@@ -1,0 +1,238 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    background-color: #020d18;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid white;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.title a {
+    font-size: xx-large;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(193, 17, 25);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.links-header {
+    margin-right: 20px;
+}
+
+.links-header a {
+    margin-left: 20px;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.links-header a:hover {
+    transform: scale(1.05);
+}
+
+.popular {
+    font-size: xx-large;
+    font-weight: 600;
+    height: 150px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    padding-top: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search label {
+    display: inline;
+    margin: 20px 20px 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+button {
+    background-color: rgb(193, 17, 25);
+    padding: 10px 30px;
+    border: none;
+    font-size: large;
+}
+
+#searchBox {
+    background-color: white;
+    border: none;
+    padding: 10px 80px;
+    font-size: large;
+    color: black;
+}
+
+.search-box {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+i {
+    background-color: transparent;
+    margin-right: 8px;
+}
+
+/* Movie card container */
+.Movieslist-row1 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Movieslist-row1-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Movieslist-row1-box {
+    width: 200px;
+    border: 2px solid #003366;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Movieslist-row1-box a {
+    text-decoration: none;
+}
+
+/* Grow effect on hover */
+.Movieslist-row1-box:hover {
+    transform: scale(1.1);
+}
+
+/* Movie image section */
+.Movieslist-row1-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Movie info section */
+.Movies-name {
+    background-color: #003366;
+    padding: 10px;
+}
+
+.Movies-name p {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Movies-name p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Movies-name p:last-child {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Pagination styles */
+.pages {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnpage {
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: rgb(193, 17, 25);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnpage:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.btnpage:hover:not(:disabled) {
+    background-color: #990000;
+}
+
+.page-counter {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    opacity: 0.8;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

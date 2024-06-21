@@ -1,0 +1,205 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.head {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.title a {
+    font-size: xx-large;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.links-header a {
+    margin-left: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.links-header a:hover {
+    /* transform: scale(1.05); */
+    color: gold;
+}
+
+/* Movies Detail */
+
+.movies-detail {
+    background-color: #003366;
+    height: auto;
+    padding: 20px;
+}
+
+.btnTVShows {
+    margin-bottom: 20px;
+}
+
+.btnTVShows button {
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.title-poster-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.poster {
+    height: 500px;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.poster img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.detail h2,
+.detail p,
+.detail ul,
+.detail button {
+    margin: 10px 0 20px;
+}
+
+.detail h2 {
+    margin-bottom: 50px;
+}
+
+.detail button {
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+
+
+
+.footer {
+    height: 130px;
+    background-color: #003366;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*  */
+}
+
+.info ul {
+    width: 100%;
+    display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.info ul li {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    /* margin-left: 100px; */
+    display: flex
+    
+}
+
+.info ul  hr {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    
+    margin-top: 50px; */
+    border-top: 0.1px solid white;
+   
+}
+.info ul li pre{
+    color: gold;
+}
+.btn-movies-detail{
+transition: all 0.2s linear;
+}
+.btn-movies-detail:hover{
+background-color: goldenrod;
+border: goldenrod solid 2px;
+color: black;
+}
+.discription{
+width: 450px;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    /* Change to fixed for viewport-relative positioning */
+    top: 50%;
+    /* Center vertically */
+    left: 45%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust position to center */
+    display: none;
+    /* Hidden by default */
+    z-index: 9999;
+    /* Ensure it's above other content */
+    opacity: 0.8;
+    /* Adjust opacity for better visibility */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

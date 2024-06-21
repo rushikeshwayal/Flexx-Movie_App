@@ -1,0 +1,243 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #020d18;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+}
+
+.flexx {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.flexx a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s ease;
+}
+
+.flexx a:hover {
+    /* transform: scale(1.05); */
+    color: gold;
+}
+
+.flexx h2 {
+    font-size: 30px;
+    color: #e50914;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+.head {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('netflix background image div 1.jpg');
+    background-size: cover;
+    margin-top: 50px;
+    /* Adjust to avoid overlap with header */
+}
+
+.head h1 {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 8px 80px;
+}
+
+.head h1:hover {
+    background-color: rgb(193, 17, 25);
+    border-color: rgb(193, 17, 25);
+    box-shadow: 0 4px 8px rgba(193, 17, 25, 0.7), 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-checkbox label {
+    margin: 20px 20px 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+button {
+    background-color: rgb(193, 17, 25);
+    padding: 10px 30px;
+    border: none;
+    font-size: large;
+}
+
+#searchBox {
+    background-color: white;
+    border: none;
+    padding: 10px 80px;
+    font-size: large;
+    color: black;
+}
+
+.search-box {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+i {
+    background-color: transparent;
+    margin-right: 8px;
+}
+
+/* Movie card container */
+.Movieslist-row1 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Movieslist-row1-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Movieslist-row1-box {
+    width: 200px;
+    border: 2px solid #003366;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    transition: all 0.3s ease;
+   
+}
+.Movieslist-row1-box a{
+    text-decoration: none;
+}
+
+.Movieslist-row1-box:hover {
+    transform: scale(1.1);
+}
+
+.Movies-name {
+    background-color: #003366;
+    padding: 10px;
+    
+}
+
+.Movies-name p {
+    background-color: transparent;
+}
+
+.Movies-name p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Movies-name p:last-child {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#Populer-Movies {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* footer */
+.footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ .title {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     margin-left: 20px;
+     text-decoration: none;
+ }
+
+ .title a {
+     font-size: xx-large;
+     font-weight: 900;
+     letter-spacing: 2px;
+     text-decoration: none;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+ .links {
+    width: 40%;
+ display: flex;
+ justify-content: space-around;
+    font-size: x-large;
+ }
+
+
+/* Loader CSS */
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    /* Change to fixed for viewport-relative positioning */
+    top: 50%;
+    /* Center vertically */
+    left: 45%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust position to center */
+    display: none;
+    /* Hidden by default */
+    z-index: 9999;
+    /* Ensure it's above other content */
+    opacity: 0.8;
+    /* Adjust opacity for better visibility */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
